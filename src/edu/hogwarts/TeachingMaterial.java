@@ -1,0 +1,70 @@
+package edu.hogwarts;
+
+public abstract class TeachingMaterial {
+    private String name;
+    private boolean onShoppingList;
+    private boolean required;
+    private boolean provided;
+    private String notes;
+
+    public TeachingMaterial(String name, boolean onShoppingList, boolean required, boolean provided, String notes) {
+        this.name = name;
+        this.onShoppingList = onShoppingList;
+        this.required = required;
+        this.provided = provided;
+        this.notes = notes;
+    }
+
+    public TeachingMaterial(){};
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isOnShoppingList() {
+        return onShoppingList;
+    }
+
+    public void setOnShoppingList(boolean onShoppingList) {
+        this.onShoppingList = onShoppingList;
+    }
+
+    public boolean isRequired() {
+        return required;
+    }
+
+    public void setRequired(boolean required) {
+        this.required = required;
+    }
+
+    public boolean isProvided() {
+        return provided;
+    }
+
+    public void setProvided(boolean provided) {
+        this.provided = provided;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
+    // Display information
+    @Override
+    public String toString() {
+        return  "Material: " + getName() +
+                ", On Shopping List: " + isOnShoppingList() +
+                ", Required: " + isRequired() +
+                ", Provided: " + isProvided() +
+                ", Notes: " + getNotes();
+    }
+}
