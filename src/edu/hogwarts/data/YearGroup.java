@@ -1,4 +1,6 @@
-package edu.hogwarts;
+package edu.hogwarts.data;
+
+import edu.hogwarts.data.HogwartsStudent;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

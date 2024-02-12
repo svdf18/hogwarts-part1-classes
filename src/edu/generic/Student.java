@@ -1,4 +1,6 @@
-package edu.hogwarts;
+package edu.generic;
+
+import edu.generic.Person;
 
 public class Student extends Person {
 
